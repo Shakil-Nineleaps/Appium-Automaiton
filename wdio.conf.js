@@ -59,7 +59,8 @@ exports.config = {
         'appium:platformName':'Android',
         'appium:deviceName':'Shakil',
         'appium:automationName':'UIAutomator2',
-        'appium:app':path.join(process.cwd(),'app/android/General-Store.apk')
+        'appium:app':path.join(process.cwd(),'app/android/General-Store.apk'),
+        'appium:chromedriverExecutable':'/home/nineleaps/Desktop/chromedriver'
     }],
     //
     // ===================
