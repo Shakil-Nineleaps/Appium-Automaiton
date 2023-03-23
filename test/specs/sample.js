@@ -13,11 +13,11 @@ describe('test file', () => {
         await $('//*[@resource-id="com.androidsample.generalstore:id/appbar_btn_cart"]').click()
         await $('//*[@bounds="[44,1650][1019,1738]"]').click()
         await $('//*[@resource-id="com.androidsample.generalstore:id/btnProceed"]').click()
-        await driver.pause(2000)
+        await driver.pause(200000)
         await driver.getContexts();
         // await driver.pause(10000)
         await driver.switchContext('WEBVIEW_com.androidsample.generalstore')
-        await driver.pause(10000)
+        await driver.pause(100000)
         await $('//*[@id="input"]').addValue("hello")
         await driver.pause(10000)
         await driver.switchContext('NATIVE_APP')
