@@ -6,7 +6,7 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    
+
     port: 4723,
     //
     // ==================
@@ -55,12 +55,12 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-    
-        'appium:platformName':'Android',
-        'appium:deviceName':'Shakil',
-        'appium:automationName':'UIAutomator2',
-        'appium:app':path.join(process.cwd(),'app/android/General-Store.apk'),
-        'appium:chromedriverExecutable':'/home/nineleaps/Desktop/chromedriver'
+
+        'appium:platformName': 'Android',
+        'appium:deviceName': 'Shakil',
+        'appium:automationName': 'UIAutomator2',
+        'appium:app': path.join(process.cwd(), 'app/android/General-Store.apk'),
+        'appium:chromedriverExecutable': '/home/nineleaps/Desktop/chromedriver'
     }],
     //
     // ===================
@@ -109,8 +109,8 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver','appium'],
-    
+    services: ['chromedriver', 'appium'],
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -134,7 +134,7 @@ exports.config = {
     reporters: ['spec'],
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
