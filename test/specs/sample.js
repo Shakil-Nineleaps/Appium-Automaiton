@@ -17,10 +17,11 @@ describe('test file', () => {
         await driver.getContexts();
         // await driver.pause(10000)
         await driver.switchContext('WEBVIEW_com.androidsample.generalstore')
-        await driver.pause(100000)
+        await driver.pause(90000)
         await $('//*[@id="input"]').addValue("hello")
         await driver.pause(10000)
         await driver.switchContext('NATIVE_APP')
         await DriverCommand.back()
+        
     });
 });
